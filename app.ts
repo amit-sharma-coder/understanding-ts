@@ -19,3 +19,12 @@ anotherFunction = add;
 
 // Below statement will not work as it is accepting only one number and returning void
 // anotherFunction = printValue;
+
+
+// Never Type
+// -------------
+// Used with the functions which are never returing any value. Better than void
+function generateError(message: string, code: number): never {
+    throw {message, code};
+}
+generateError('An error occurred', 500);
